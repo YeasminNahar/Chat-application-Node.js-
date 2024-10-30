@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="Newstyle.css" type="text/css">
+    <title> Group Chat</title>
+</head>
+<body>
+    <section id="container">
+        <div class="new_header">
+            <h4 class="detail">Group Chat</h4> 
+           <div class="user"></div>
+            <h5 class="group">Group Name</h5>
+        </div>
+        <div class="chat-meassage">
+        </div>
+        <div class="chat-form">   
+            <input type="text" name="txt-msg" value=" "> 
+            <label for="uploadimg"><img src="c.png" name="file-msg" class="c"  />  </label>
+             <input type="file" name="fileShare" id="uploadimg">
+            <img src="sending.png" class="Clickbtn" onclick="sendClick()" /> 
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>
